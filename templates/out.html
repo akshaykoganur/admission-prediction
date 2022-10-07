@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>College Prediction</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Welcome to College Prediction App</h1>
+        
+    </div>
+    <div class="ans">
+        <h2>Your Result is </h2>
+    </div>
+    <div class="out">
+        <p>{{ output }} % chance of Admission</p>
+    </div>
+    
+    <div class="end">
+        <h2>This Website uses Linear Regression Model to predict results</h2>
+    </div>
+    <div class="by">
+        <p>Made by <a href="https://www.linkedin.com/in/akshay-koganur-255ba7208/">Akshay Koganur</a></p>
+    </div>
+</body>
+</html>

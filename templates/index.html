@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>College Prediction</title>
+</head>
+<body>
+    <div class="intro">
+        <h1>Welcome to College Prediction App</h1>
+        
+    </div>
+    <form action="{{ url_for('predict')}}" name="form" method="GET">
+        <p>Enter GRE Score</p>
+        <input type="number" name="gre" id="gre">
+        <br>
+        <p>Enter TOEFL Score</p>
+        <input type="number" name="toefl" id="toefl">
+        <br>
+        <p>Enter University Rating</p>
+        <input type="number" name="uni_rating" id="uni_rating">
+        <br>
+        <p>Enter SOP</p>
+        <input type="number" name="sop" id="sop" step="0.01">
+        <br>
+        <p>Enter LOR</p>
+        <input type="number" name="lor" id="lor" step="0.01">
+        <br>
+        <p>Enter CGPA</p>
+        <input type="number" name="cgpa" id="cgpa" step="0.01">
+        <br>
+        <p>Enter Research</p>
+        <input type="text" name="research" id="research">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <div class="end">
+        <h2>This Website uses Linear Regression Model to predict results</h2>
+    </div>
+    <div class="by">
+        <p>Made by <a href="https://www.linkedin.com/in/akshay-koganur-255ba7208/">Akshay Koganur</a></p>
+    </div>
+</body>
+</html>
